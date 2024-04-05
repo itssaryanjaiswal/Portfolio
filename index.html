@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="img">
+                <img src="01.jpg">
+            </div>
+            <div class="profile_text">
+                <h1><span>A</span>ryan <span>J</span>aiswal</h1>
+                <h3>Web Developer</h3>
+            </div>
+            <div class="social">
+                <a class="fa-brands fa-instagram" target="_blank" href="https://www.instagram.com/itss_aryan_jaiswal/"></a>
+                <a class="fa-brands fa-github" target="_blank" href="https://github.com/itssaryanjaiswal"></a>
+                <a class="fa-brands fa-telegram" href="#"></a>
+            </div>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="container2">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="1.jpeg" alt="Profile Image">
+                </div>
+                <br>
+                <br>
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>Welcome to my portfolio website! I'm <span>Aryan Jaiswal</span> a Front-End Web Developer. I live in Azamgarh , Uttar Pradesh - Making creative designs is my hobbies</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="skills-container">
+        <h1>My Skills</h1>
+        <div class="skill_box">
+            <div class="box">
+                <i class="fa-brands fa-html5"></i>
+                <h1>HTML5</h1>
+            </div>
+            <div class="box">
+                <i class="fa-brands fa-css3" style="color: rgb(0, 255, 200);"></i>
+                <h1>CSS3</h1>
+            </div>
+            <div class="box2">
+                <i class="fa-brands fa-js" style="color: greenyellow;"></i>
+                <h1 style="margin-top: -13px;">Java Script</h1>
+            </div>
+            <div class="box2">
+                <i class="fa-brands fa-bootstrap" style="color: rgb(255, 0, 0);"></i>
+                <h1 style="font-size: 28px;">Bootstrap</h1>
+            </div>
+        </div>
+    </div>
+    <div class="contact_me">
+        <h1>Contact Me</h1>
+        <form action="/submit_form" method="post">
+            <label for="name"></label><br>
+            <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <label for="message"></label><br>
+            <textarea placeholder="Message" id="message" name="message" rows="5" cols="30" required></textarea><br>
+            <button class="ui-btn" type="submit">
+                <span>
+                  Submit 
+                </span>
+              </button>
+          </form>
+    </div>
+        
+</body>
+</html>

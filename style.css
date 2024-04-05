@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: myfont;
+    src: url('r.ttf');
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(-10deg,rgb(27, 27, 27),rgb(4, 4, 172)); */
+
+
+    --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.img{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+}
+.profile img {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+
+    
+}
+.profile_text {
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+}
+.profile_text h1{
+    font-family: myfont;
+    font-size: 2.8em;
+}
+.profile_text h3{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3%;
+}
+.profile_text span{
+    color: red;
+}
+
+.social{
+    margin: 20px;
+}
+.social a{
+    color: white;
+    font-size: 2rem;
+    margin: 15px;
+    text-decoration: none;
+}
+
+
+
+  
+.about {
+    background-color: rgb(99, 60, 190);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container2 {
+    width: 80%;
+    margin: auto;
+    
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-text {
+    text-align: center;
+    font-size: 3.5vh;
+    
+  }
+  
+  .about-image {
+    max-width: 280px;
+  }
+  .about-text span{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 153, 0);
+    font-family: impact;
+  }
+  .about-text h1{
+    font-family: myfont;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    
+  }
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+.skills-container{
+  height: 100vh;
+  width: 100%;
+  
+  /* background: linear-gradient(45deg, rgb(228, 131, 147) , rgb(241, 154, 169) ); */
+  text-align: center;
+}
+.skills-container h1{
+  font-family: myfont;
+  padding-top: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.skill_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.skill_box .box{
+  height: 200px;
+  width: 40%;
+  background-color: rgb(99, 60, 190);
+  margin: 15px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skill_box .box2{
+  height: 200px;
+  width: 40%;
+  background-color: rgb(99, 60, 190);
+  margin: 15px;
+  margin-top: 60px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.box i{
+  font-size: 100px;
+  margin: 10px;
+  color: rgb(238, 102, 52);
+  
+}
+.box h1{
+  font-family: sans-serif;
+}
+.box2 i{
+  font-size: 100px;
+  margin: 10px;
+  color: rgb(238, 102, 52);
+  
+}
+.box2 h1{
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+  .skill_box .box{
+    margin-top: 20px;
+  }
+  .skill_box .box2{
+    margin-top: 15px;
+  }
+}
+
+
+.contact_me{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(99, 60, 190);
+  text-align: center;
+}
+
+.contact_me h1{
+  font-family: myfont;
+  padding-top: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+form{
+  margin-top: 80px;
+}
+input{
+  padding: 10px;
+  height: 30px;
+  width: 80%;
+  
+}
+form textarea{
+  padding: 10px;
+  width: 80%;
+}
+
+
+.ui-btn {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 86%;
+  --btn-default-bg: rgb(41, 41, 41);
+  --btn-padding: 15px 20px;
+  --btn-hover-bg: rgb(51, 51, 51);
+  --btn-transition: .3s;
+  --btn-letter-spacing: .1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0.137);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #FAC921;
+  --default-btn-color: #fff;
+  --font-size: 16px;
+  /* 👆 this field should not be empty */
+  --font-weight: 600;
+  --font-family: Menlo,Roboto Mono,monospace;
+  /* 👆 this field should not be empty */
+}
+
+/* button settings 👆 */
+
+.ui-btn {
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  border: none;
+  cursor: pointer;
+  transition: var(--btn-transition);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+}
+
+.ui-btn span {
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.ui-btn span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+}
+
+.ui-btn:hover, .ui-btn:focus {
+  background: var(--btn-hover-bg);
+}
+
+.ui-btn:hover span, .ui-btn:focus span {
+  color: var(--hover-btn-color);
+}
+
+.ui-btn:hover span::before, .ui-btn:focus span::before {
+  animation: chitchat linear both var(--btn-animation-duration);
+}
+
+@keyframes chitchat {
+  0% {
+    content: "#";
+  }
+
+  5% {
+    content: ".";
+  }
+
+  10% {
+    content: "^{";
+  }
+
+  15% {
+    content: "-!";
+  }
+
+  20% {
+    content: "#$_";
+  }
+
+  25% {
+    content: "№:0";
+  }
+
+  30% {
+    content: "#{+.";
+  }
+
+  35% {
+    content: "@}-?";
+  }
+
+  40% {
+    content: "?{4@%";
+  }
+
+  45% {
+    content: "=.,^!";
+  }
+
+  50% {
+    content: "?2@%";
+  }
+
+  55% {
+    content: "\;1}]";
+  }
+
+  60% {
+    content: "?{%:%";
+    right: 0;
+  }
+
+  65% {
+    content: "|{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "{4%0%";
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: "{0%";
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: "4";
+    right: 0;
+  }
+
+  95% {
+    content: "2";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+
+
+
+
